@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HealthTechy</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="health.css">
+</head>
+<body>
+    <div>
+        <!-- Header Section -->
+        <header class="header">     
+            <p class="para"><b>Home &nbsp;</b></p>
+            <p class="para"><b>About &nbsp;</b></p>
+            <p class="para"><b>Services &nbsp;</b></p>
+            <p class="para"><b>Doctors &nbsp;</b>        
+            <p class="para"><b>News</b></p>
+            <button class="login">Log-in</button>
+            <button class="signup">Sign-up</button>
+            <p class="para"><b>24X7 Available</b></p>
+        </header>
+
+        <!-- Menu and Doctor List -->
+        <label>
+            <input class="check" type="checkbox">
+            <div class="toggle">
+                <span class="top_line common"></span>
+                <span class="middle_line common"></span>
+                <span class="bottom_line common"></span>
+            </div>
+            <div id="doctor"> 
+                <h1>Menu</h1>
+                <h2 class="doctorlist"><u>Doctors List</u>&nbsp;&nbsp;<i class="fa fa-user-md"></i></h2><br>
+
+                <!-- Specialty Lists -->
+                <div class="orthopedic">
+                    <h3>Orthopedic</h3>
+                    <ul>
+                        <li>D. Sardar</li>
+                        <li>R. Mondal</li>
+                        <li>Lk. Mukherjee</li>
+                        <li>Vibhas Mondal</li>
+                        <li>Samim Khan</li>
+                    </ul>
+                </div><br>
+
+                <div class="cardiology">
+                    <h3>Cardiology</h3>
+                    <ul>
+                        <li>Naresh Trehan</li>
+                        <li>Ashok Seth</li>
+                        <li>S. K. Gupta</li>
+                        <li>K. K. Agarwal</li>
+                        <li>C. N. Makhija</li>
+                    </ul>
+                </div><br>
+
+                <div class="general">
+                    <h3>General Physician</h3>
+                    <ul>
+                        <li>M. G. Alam</li>
+                        <li>Md Samsujjaman</li>
+                        <li>SK. Ghosh</li>
+                        <li>Sahid Imam Mallick</li>
+                        <li>Khairul Imam Mallick</li>
+                    </ul>
+                </div><br>
+
+                <div class="child">
+                    <h3>Child Specialist</h3>
+                    <ul>
+                        <li>M.A. Habib</li>
+                        <li>Mustakim Laskar</li>
+                        <li>Halim Sk.</li>
+                        <li>Mariya Arjuman</li>
+                    </ul>
+                </div><br>
+
+                <div class="dental">
+                    <h3>Dental</h3>
+                    <ul>
+                        <li>Goutam Naskar</li>
+                        <li>Mosiur Rahaman Laskar</li>
+                        <li>Rakibul Molla</li>
+                        <li>Inzamul Haque</li>
+                        <li>Khairul Gazi</li>
+                    </ul>
+                </div><br>
+
+                <!-- Hospital List -->
+                <div class="hospital"> 
+                    <h2 class="hos"><u>Hospital List</u>&nbsp;&nbsp;<i class="fa fa-hospital-o"></i></h2>
+                    <ul>
+                        <li>Amri Hospital</li>
+                        <li>Desun Hospital</li>
+                        <li>Apollo Multispeciality Hospital</li>
+                        <li>Woodlands Multispeciality Hospital</li>
+                        <li>Manipal Hospitals Broadway</li>
+                        <li>Iris Multispeciality Hospital</li>
+                        <li>Charnock Hospital</li>
+                        <li>Medica Superspecialty Hospital</li>
+                        <li>Eskag Sanjeevani Multispeciality Hospital</li>
+                        <li>ILS Hospitals</li>
+                    </ul>
+                </div>
+                <h4 id="contact_us"><i class="fa fa-phone"></i> Contact Us</h4>
+                <p id="email"><i class="fa fa-envelope"></i>sarowarh086@gmail.com</p>
+                <p id="email"><i class="fa fa-envelope"></i>rameez.aam2002@gmail.com</p>
+                <p id="help"> <i class="fa fa-desktop"></i>help desk</p>
+            </div>
+        </label>
+
+        <!-- Short Story Section -->
+        <div class="short">
+            <!-- Image of the doctor -->
+            <img class="image" src="https://lmis.nihfw.ac.in/theme/nihfw/pix/bannerfour.png" alt="doctor">
+            <div class="image_text">
+                <h2>Every patient has a story, every story has a lesson.</h2>
+                <h2>We are here for listening your story...</h2>
+                <h2>and we just need to give it the right treatments.</h2>
+            </div>
+        </div>
+
+        <!-- Service Section -->
+        <div class="service">
+            <h3>Our Services</h3>
+        </div>
+        
+
+                    <!-- Login Modal -->
+            <div id="loginModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Login</h2>
+                    <form id="loginForm">
+                        <label for="loginEmail">Email:</label>
+                        <input type="email" id="loginEmail" name="email" required><br><br>
+                        <label for="loginPassword">Password:</label>
+                        <input type="password" id="loginPassword" name="password" required><br><br>
+                        <button type="submit">Login</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Signup Modal -->
+            <div id="signupModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Sign Up</h2>
+                    <form id="signupForm">
+                        <label for="signupName">Name:</label>
+                        <input type="text" id="signupName" name="name" required><br><br>
+                        <label for="signupEmail">Email:</label>
+                        <input type="email" id="signupEmail" name="email" required><br><br>
+                        <label for="signupPassword">Password:</label>
+                        <input type="password" id="signupPassword" name="password" required><br><br>
+                        <button type="submit">Sign Up</button>
+                    </form>
+                </div>
+            </div>
+
+        <!-- Footer Section -->
+        <footer class="below">
+            <div class="identify">
+                <!-- Corrected image URL on a single line -->
+                <img class="ill" src="https://media.istockphoto.com/id/528290460/photo/boy-measuring-fever.jpg?s=612x612&w=0&k=20&c=0aVVFKNxHHbxio86tSBaASzCTpPgwcMLQb6h2-rPN_k=" alt="illness">
+                
+                <div class="iden"><b>Identify Illness</b></div>
+            </div>
+            
+            <!-- Modal Structure -->
+            <div id="identifyModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Identify Illness</h2>
+                    <p>Enter your symptoms to get more information on possible illnesses.</p>
+                    <input type="text" placeholder="Enter symptoms..." />
+                    <button onclick="identifyIllness()">Submit</button>
+                </div>
+            </div>
+
+
+            <div class="doc">
+                <!-- Ensure the image URL is a single line -->
+                <img class="doctor1" src="https://images.unsplash.com/photo-1551601651-2a8555f1a136?q=80&w=1447&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="doctor image">
+                
+                <div class="doctor2"><b>Doctors</b></div>
+            </div>
+            
+            <!-- Modal Structure -->
+            <div id="doctorsModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Our Doctors</h2>
+                    <p>Select a specialty to view available doctors.</p>
+                    <select id="specialty">
+                        <option value="orthopedic">Orthopedic</option>
+                        <option value="cardiology">Cardiology</option>
+                        <option value="general">General Physician</option>
+                        <option value="child">Child Specialist</option>
+                        <option value="dental">Dental</option>
+                    </select>
+                    <button onclick="showDoctors()">View Doctors</button>
+                    <div id="doctorList"></div>
+                </div>
+            </div>
+
+
+            <div class="nursing">
+                <!-- Corrected image URL on a single line -->
+                <img class="nursing1" src="https://media.istockphoto.com/id/1419877131/photo/building-facade-of-a-hospital-in-commercial-and-business-district-under-blue-sky.jpg?s=612x612&w=0&k=20&c=wGxVbFSxljSZb_t_qROE4RwsCgssKbGlqawAtmQ88Ls=" alt="hospital">
+                
+                <div class="nursing2"><b>Hospitals</b></div>
+            </div>
+            
+            <!-- Modal Structure -->
+            <div id="hospitalsModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Hospitals List</h2>
+                    <ul id="hospitalList"></ul>
+                </div>
+            </div>
+
+            <!-- Shops Section -->
+            <div class="shop">
+                <!-- Medicine Shop Image -->
+                <img class="shop1" src="https://thumbs.dreamstime.com/b/rows-well-stocked-pharmacy-shelves-filled-various-medications-healthcare-products-medical-store-ai-generated-rows-323140885.jpg" alt="Medicine Shop">
+                <div class="shop2" id="shopCard" style="cursor: pointer;"><b>Shops</b></div>
+            </div>
+            
+            <!-- Shops Modal -->
+            <div id="shopsModal" class="modal">
+                <div class="modal-content">
+                    <span class="close" id="closeShopModal">&times;</span>
+                    <h2>Medicine Shops</h2>
+                    <div id="shopsList">
+                        <ul>
+                            <li>HealthPlus Pharmacy</li>
+                            <li>MedCity Pharmacy</li>
+                            <li>LifeCare Pharmacy</li>
+                            <li>QuickMeds</li>
+                            <li>Wellness Hub</li>
+                            <!-- Add more shops as needed -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="ambulance">
+                <!-- Corrected image URL -->
+                <img class="ambulance1" src="https://static.toiimg.com/thumb/msid-107213884,width-1280,height-720,imgsize-2171279,resizemode-72,overlay-toi_sw,pt-32,y_pad-40/photo.jpg" alt="Ambulance">
+                <div class="ambulance2" id="ambulanceCard" style="cursor: pointer;"><b>Ambulance</b></div>
+            </div>
+            
+            <!-- Ambulance Modal -->
+            <div id="ambulanceModal" class="modal">
+                <div class="modal-content">
+                    <span class="close" id="closeAmbulanceModal">&times;</span>
+                    <h2>Ambulance Services</h2>
+                    <div id="ambulanceList">
+                        <ul>
+                            <li>ABC Ambulance Services</li>
+                            <li>XYZ Emergency Ambulance</li>
+                            <li>SafeRide Ambulance</li>
+                            <li>24/7 Ambulance Support</li>
+                            <li>City Ambulance</li>
+                            <!-- Add more ambulance services as needed -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+
+        </footer>
+
+    <!-- External JS -->
+    <script src="health.js"></script>
+</body>
+</html>
