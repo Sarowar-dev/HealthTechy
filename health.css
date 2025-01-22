@@ -110,24 +110,37 @@ body{
     flex-direction: row-reverse;
 }
 .login{
-    margin-left: 10px;
+    margin-left: 325px;
     height: 25px;
-    width: 50px;
+    width: 70px;
     border-radius: 10px;
     text-align: center;
+    background-color: white;
+    color: black;
+    border: none;
 }
 .login:hover {
-    background-color: rgb(155, 232, 155);
+    color: rgb(17, 159, 215);
+}
+.login #login{
+    color:rgb(7, 132, 182) ;
 }
 .signup{
     margin: 10px;  
     margin-left: 30px;
     height: 25px;
-    width: 60px;
-    border-radius: 10px;
+    width: 90px;
+    border-radius: 30px ;
+    background-color: rgb(40, 178, 233);
+    color: white;
+    border-color: rgb(234, 236, 234); 
 }
-.signup:hover {
-    background-color: rgb(235, 144, 144);
+.signup:hover{
+    background-color: rgb(246, 48, 48);
+}
+#signup {
+    color: white;
+    border-radius: 50%;
 }
 .image{
     height: 350px;
@@ -147,7 +160,7 @@ body{
     box-shadow: 10px;
     text-align: center;
     padding-top: 10px;
-      
+    position: fixed;
 }
 .header .para{
     display: inline-block;
@@ -160,6 +173,10 @@ body{
 .header .para:hover{
     color: lightskyblue;
     flex-direction: row;
+}
+header div{
+    position: fixed;
+    padding-left:37.5% ;
 }
 .service{
     margin-top: 10px;
@@ -273,204 +290,6 @@ body{
     box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.3);
 }
 
-
-/* Modal (dialog box) styles */
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed;
-    z-index: 1;
-    padding-top: 100px;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0,0.4);
-}
-
-.modal-content {
-    background-color: #fefefe;
-    margin: auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-    max-width: 500px;
-    border-radius: 10px;
-}
-
-.close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-.close:hover,
-.close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-
-/* Reuse or add these modal styles */
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    padding-top: 100px;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0,0,0,0.4);
-}
-
-.modal-content {
-    background-color: #fefefe;
-    margin: auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-    max-width: 500px;
-    border-radius: 10px;
-}
-
-.close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-.close:hover,
-.close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-
-/* Modal Styles */
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    padding-top: 100px;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.4);
-}
-
-.modal-content {
-    background-color: #fefefe;
-    margin: auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-    max-width: 500px;
-    border-radius: 10px;
-}
-
-.close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-.close:hover,
-.close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.4);
-}
-
-.modal-content {
-    background-color: #fefefe;
-    margin: 10% auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 300px;
-    border-radius: 5px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-}
-
-.close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed;
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    background-color: rgba(0, 0, 0, 0.4); /* Black background with transparency */
-}
-
-.modal-content {
-    background-color: white;
-    margin: 15% auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-    max-width: 500px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    border-radius: 8px;
-}
-
-.modal .close {
-    color: #aaa;
-    font-size: 28px;
-    font-weight: bold;
-    position: absolute;
-    top: 10px;
-    right: 15px;
-    cursor: pointer;
-}
-
-.modal .close:hover,
-.modal .close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-}
-
 /* Shops List */
 #shopsList ul {
     list-style-type: none;
@@ -481,8 +300,6 @@ body{
     padding: 8px;
     border-bottom: 1px solid #ddd;
 }
-
-
 .modal {
     display: none; /* Hidden by default */
     position: fixed;
@@ -491,28 +308,33 @@ body{
     top: 0;
     width: 100%; /* Full width */
     height: 100%; /* Full height */
-    background-color: rgba(0, 0, 0, 0.4); /* Black background with transparency */
+    background-image: url("https://plus.unsplash.com/premium_photo-1658506671316-0b293df7c72b?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8ZG9jdG9yfGVufDB8fDB8fHww");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: fixed;
 }
 
 .modal-content {
-    background-color: white;
+    background-color: rgba(64, 64, 64, 0.15);
     margin: 15% auto;
     padding: 20px;
     border: 1px solid #888;
     width: 80%;
-    max-width: 500px;
+    max-width: 325px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    border-radius: 8px;
+    border-radius: 25px;
+    height: 350px;
 }
 
 .modal .close {
-    color: #aaa;
+    color: black;
     font-size: 28px;
     font-weight: bold;
-    position: absolute;
+    position: fixed;
     top: 10px;
     right: 15px;
     cursor: pointer;
+    padding-right: 10px;
 }
 
 .modal .close:hover,
@@ -531,4 +353,313 @@ body{
 #ambulanceList li {
     padding: 8px;
     border-bottom: 1px solid #ddd;
+}
+#loginform .login{
+    color: black;
+}
+#loginform{
+    color: rgba(192, 17, 17, 0.15);
+}
+.para a:link{
+    text-decoration:none;
+}
+.para a{
+    color: black;
+}
+.para1{
+    margin: 25px;
+    color:black;
+}
+@media (max-width: 720px)
+{
+    .image_text{
+        color: white;
+        margin-left: 0px;
+        font-size: 10px;
+    }
+    .modal{
+        width: 100%;
+        height: 100%;
+        padding: 15px;
+        background-size: cover;
+        background-position:center;
+    }
+}
+@media (max-width: 480px)
+{
+    .image_text{
+        color: white;
+        margin-left: 0px;
+        font-size: 7px;
+        }
+    .modal{
+        width: 100%;
+        height: 100%;
+        padding: 15px;
+        background-size: cover;
+        background-position:center;
+    }
+    .header{
+        padding-left: -20%;
+        font-size: 10px;
+    }
+}
+
+div #signupForm{
+    color: rgb(2, 12, 12);
+    width: 500px;
+    height: 900px; 
+    font-size: 15px;
+}
+div .modal-content{
+    height: 400px;
+    width: 400px;
+}
+#signupModal h2{
+    text-align: center;
+    margin-bottom: 50px;
+    color: rgb(6, 63, 63);
+}
+#signupModal i{
+    font-size: 45px;
+    color: rgb(4, 58, 80);
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    margin-top: -45px;
+}
+input{
+    border-radius: 5px;
+}
+.signup-button{
+    border-radius: 20px;
+    width: 20%;
+    height: 25px;
+    background-color: rgb(5, 33, 42);
+    color: rgb(249, 247, 247);
+    position: absolute;
+    bottom: 15%;
+    right: 40%;
+    cursor: pointer;
+}
+.signup-button:hover{
+    background-color: skyblue;
+    color: black;
+}
+.login-button{
+    background-color:rgb(6, 18, 43) ;
+    color: rgb(248, 246, 246);
+    height: 25px;
+    width: 20%;
+    border-radius: 20px;
+    position: absolute;
+    bottom: 22.5%;
+    right: 40%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.login-button:hover{
+    background-color: rgb(92, 233, 245);
+    color: black;
+}
+#loginModal h2{
+    text-align: center;
+    margin-bottom: 50px;
+    color: rgb(6, 18, 47);
+}
+#identifyModal h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+#identifyModal p{
+    margin-bottom: 20px;
+}
+#identifyModal button{
+    height: 25px;
+    width: 20%;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 22.5%;
+    right: 40%;
+    background-color: aquamarine;
+    color: black;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+}
+#identifyModal button:hover{
+    background-color: aqua;
+}
+#doctorsModal h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+#doctorsModal p{
+    margin-bottom: 10px;
+}
+#hospitalsModal h2{
+    text-align: center;
+    margin-bottom: 10px;
+}
+#shopsModal h2{
+    text-align: center;
+    margin-bottom: 10px;
+}
+#ambulanceModal h2{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#contact_us{
+    margin-top: 10px;
+    text-align: center;
+}
+#email{
+    text-align: left;
+}
+#help{
+    text-align: left;
+}
+.doctor2 .doctor2{
+    margin-left: 25px;
+}
+.nursing2 .nursing2{
+    margin-left: 20px;
+}
+.shop2 .shop2{
+    margin-left: 30px;
+}
+.ambulance2 .ambulance2{
+    margin-left: 15px;
+}
+#contact_us a:link{
+    text-decoration: none;
+}
+#contact_us a{
+    color: black;
+}
+.lock i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -45px;
+    font-size: 45px;
+    color: rgb(6, 18, 43) ;
+}
+input{
+    height: 30px;
+    border-radius: 20px;
+    background-color: rgb(243, 244, 244);
+    color: black;
+    padding-left: 10px;
+}
+#loginForm i{
+    font-size: 20px;
+}
+.remember-forgot-box{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    font-size: 15px;
+}
+.remember-forgot-box .lab-el{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+.remember-forgot-box input{
+    accent-color:white;
+    cursor: pointer;
+}
+.remember-forgot-box a{
+    color: white;
+    text-decoration: none;
+}
+.remember-forgot-box a:hover{
+    text-decoration: underline;
+}
+.register{
+    margin-top: 15px;
+    font-size: 15px;
+}
+.register a{
+    color:white;
+    text-decoration: none;
+    font-weight: 500;
+}
+.register a:hover{
+    text-decoration: underline;
+}
+#shopsModal{
+    background-image: url("https://cdn.prod.website-files.com/637f7c161a14232e2ea8473d/66bf409fd912b58dd05c9a50_Untitled%20design%20(3)-compressed.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: fixed;  
+}
+#ambulanceModal{
+    background-image: url("https://medcab.in/assets/blogs/blog_thumbnail1690458201.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: fixed;  
+}
+#hospitalsModal{
+    background-image: url("https://ehealth.eletsonline.com/wp-content/uploads/2009/07/best-hospital-in-south-india.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: fixed;  
+}
+#doctorsModal{
+    background-image: url("https://hms.harvard.edu/sites/default/files/media/800-Doctors-Talking-GettyImages-1421919753.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: fixed;  
+}
+#identifyModal{
+    background-image: url("https://images.indianexpress.com/2025/01/chronic-illness.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: fixed;
+    cursor: pointer;
+}
+.short{
+    padding-top: 70px;
+}
+#identifyModal .modal-content{
+    background-color: rgba(228, 230, 230, 0.833);
+}
+#doctorsModal .modal-content{
+    background-color: rgba(228, 230, 230, 0.833);
+}
+#hospitalsModal .modal-content{
+    background-color: rgba(228, 230, 230, 0.833);
+}
+#shopsModal .modal-content{
+    background-color: rgba(228, 230, 230, 0.833);
+}
+#ambulanceModal .modal-content{
+    background-color: rgba(228, 230, 230, 0.833);
+}
+#doctorsModal #specialty {
+    border-radius: 20px;
+    width: 55%;
+    height: 7.5%;
+    padding-left: 10px;
+    font-weight: bold;
+}
+#signupModal .modal-content{
+    margin-top: 10%;
+    height: 475px;
+    background-color: rgba(200, 224, 223, 0.62);
+}
+#loginModal .modal-content{
+    background-color: rgba(200, 224, 223, 0.62);
+}
+#signupForm a{
+    color: rgb(6, 6, 22);
+    font-weight: bold;
+}
+#loginForm a{
+    color: rgb(6, 6, 22);
+    font-weight: bold;
 }

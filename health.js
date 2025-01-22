@@ -42,8 +42,10 @@ emails.forEach(function (email) {
         window.location.href = mailto;
     });
 });
-
-
+document.getElementById("ContactUsButton").addEventListener("click", function()
+{
+    window.location.href="tel:+918637855177";
+});
 
 // Get the modal and close button
 const modal = document.getElementById("identifyModal");
@@ -240,3 +242,4 @@ window.onclick = function (event) {
         ambulanceModal.style.display = "none";
     }
 }
+
