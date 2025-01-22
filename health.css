@@ -385,7 +385,7 @@ header div{
         background-position:center;
     }
 }
-@media (max-width: 480px)
+@media (min-width: 480px)
 {
     .image_text{
         color: white;
