@@ -664,10 +664,3 @@ input{
     color: rgb(6, 6, 22);
     font-weight: bold;
 }
-@media (max-width:480px){
-    div .image_text h2{
-        margin-top: 0;
-        padding-top: 0;
-        padding-left: 0;
-    }
-}
