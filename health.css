@@ -33,7 +33,7 @@ body{
 .check{
     display: none;
     visibility: hidden;
-    -webkit-appearance: none;
+    webkit-appearance: none;
 }
 .toggle{
     position: absolute;
