@@ -391,6 +391,7 @@ header div{
         color: white;
         margin-left: 0px;
         font-size: 7px;
+        margin-top: 0px;
         }
     .modal{
         width: 100%;
@@ -400,7 +401,7 @@ header div{
         background-position:center;
     }
     .header{
-        padding-left: -20%;
+        padding-left: -10%;
         font-size: 10px;
     }
 }
@@ -662,4 +663,11 @@ input{
 #loginForm a{
     color: rgb(6, 6, 22);
     font-weight: bold;
+}
+@media (max-width:480px){
+    div .image_text h2{
+        margin-top: 0;
+        padding-top: 0;
+        padding-left: 0;
+    }
 }
