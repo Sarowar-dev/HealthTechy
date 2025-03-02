@@ -214,6 +214,7 @@ header div{
     box-shadow: 0px 2px 4px;
     margin: 15px;
 }
+
 .ambulance{
     height: 200px;
     width: 200px;
@@ -222,6 +223,8 @@ header div{
     box-shadow: 0px 2px 4px;
     margin: 15px;
 }
+
+
 .below{
     margin-top: 30px;
     display: flex;
@@ -229,6 +232,7 @@ header div{
     flex-wrap: wrap;
 
 }
+
 .ill{
     height: 150px;
     width: 200px;
@@ -300,18 +304,27 @@ header div{
     padding: 8px;
     border-bottom: 1px solid #ddd;
 }
+
 .modal {
     display: none; /* Hidden by default */
     position: fixed;
     z-index: 1; /* Sit on top */
     left: 0;
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
+    width: 100vw; /* Full viewport width */
+    height: 100vh; /* Full viewport height */
     background-image: url("https://plus.unsplash.com/premium_photo-1658506671316-0b293df7c72b?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8ZG9jdG9yfGVufDB8fDB8fHww");
     background-repeat: no-repeat;
-    background-size: 100%;
-    position: fixed;
+    background-size: cover; /* Ensures full-screen coverage without distortion */
+    background-position: center; /* Keeps the image centered */
+}
+
+/* Mobile-specific adjustments */
+@media (max-width: 768px) { /* Target smaller screens */
+    .modal {
+        background-size: cover; /* Ensures the image covers the entire screen */
+        background-position: center; /* Keeps the focus on the important part of the image */
+    }
 }
 
 .modal-content {
@@ -370,28 +383,14 @@ header div{
     margin: 25px;
     color:black;
 }
-@media (max-width: 720px)
+
+
+@media (max-width: 600px)
 {
-    .image_text{
+    .image_text h2{
         color: white;
-        margin-left: 0px;
-        font-size: 10px;
-    }
-    .modal{
-        width: 100%;
-        height: 100%;
-        padding: 15px;
-        background-size: cover;
-        background-position:center;
-    }
-}
-@media (max-width: 480px)
-{
-    .image_text{
-        color: white;
-        margin-left: 0px;
-        font-size: 7px;
-        margin-top: 0px;
+        font-size: 1rem;
+        margin-top: -30%;
         }
     .modal{
         width: 100%;
@@ -400,11 +399,12 @@ header div{
         background-size: cover;
         background-position:center;
     }
-    .header{
-        padding-left: -10%;
-        font-size: 10px;
+    .header div{
+        padding-left: 0%;
+        font-size: 14px;
     }
 }
+
 
 div #signupForm{
     color: rgb(2, 12, 12);
@@ -443,6 +443,8 @@ input{
     right: 40%;
     cursor: pointer;
 }
+
+
 .signup-button:hover{
     background-color: skyblue;
     color: black;
@@ -592,40 +594,122 @@ input{
 .register a:hover{
     text-decoration: underline;
 }
-#shopsModal{
+#shopsModal {
     background-image: url("https://cdn.prod.website-files.com/637f7c161a14232e2ea8473d/66bf409fd912b58dd05c9a50_Untitled%20design%20(3)-compressed.jpg");
     background-repeat: no-repeat;
-    background-size: 100%;
-    position: fixed;  
+    background-size: cover; /* Ensures full coverage */
+    background-position: center; /* Centers the image */
+    width: 100vw;  /* Full viewport width */
+    height: 100vh; /* Full viewport height */
+    position: fixed;
+    top: 0;
+    left: 0;
 }
-#ambulanceModal{
+
+/* Mobile-specific adjustments */
+@media (max-width: 768px) { /* Adjust for mobile screens */
+    #shopsModal {
+        background-size: cover; /* Ensures the image covers the screen */
+        background-position: center; /* Keeps the image centered */
+        width: 100vw;
+        height: 100vh;
+    }
+}
+
+#ambulanceModal {
     background-image: url("https://medcab.in/assets/blogs/blog_thumbnail1690458201.jpg");
     background-repeat: no-repeat;
-    background-size: 100%;
-    position: fixed;  
+    background-size: cover; /* Ensures full coverage */
+    background-position: center; /* Centers the image */
+    width: 100vw;  /* Full viewport width */
+    height: 100vh; /* Full viewport height */
+    position: fixed;
+    top: 0;
+    left: 0;
 }
-#hospitalsModal{
+
+/* Mobile-specific adjustments */
+@media (max-width: 768px) { /* Adjust for mobile screens */
+    #ambulanceModal {
+        background-size: cover; /* Ensures the image covers the screen */
+        background-position: center; /* Keeps the image centered */
+        width: 100vw;
+        height: 100vh;
+    }
+}
+
+#hospitalsModal {
     background-image: url("https://ehealth.eletsonline.com/wp-content/uploads/2009/07/best-hospital-in-south-india.jpg");
     background-repeat: no-repeat;
-    background-size: 100%;
-    position: fixed;  
+    background-size: cover; /* Ensures the image fully covers the screen */
+    background-position: center; /* Centers the image */
+    width: 100vw;  /* Full viewport width */
+    height: 100vh; /* Full viewport height */
+    position: fixed;
+    top: 0;
+    left: 0;
 }
-#doctorsModal{
+
+/* Mobile-specific adjustments */
+@media (max-width: 720px) {
+    #hospitalsModal {
+        background-size: cover; /* Ensures the image covers the screen properly */
+        background-position: center;
+        width: 100vw;
+        height: 100vh;
+    }
+}
+
+#doctorsModal {
     background-image: url("https://hms.harvard.edu/sites/default/files/media/800-Doctors-Talking-GettyImages-1421919753.jpg");
     background-repeat: no-repeat;
-    background-size: 100%;
-    position: fixed;  
+    background-size: cover; /* Ensures the image fully covers the screen */
+    background-position: center; /* Centers the image */
+    width: 100vw;  /* Full viewport width */
+    height: 100vh; /* Full viewport height */
+    position: fixed;
+    top: 0;
+    left: 0;
 }
-#identifyModal{
+
+/* Mobile-specific adjustments */
+@media (max-width: 720px) {
+    #doctorsModal {
+        background-size: cover; /* Ensures the image covers the screen properly */
+        background-position: center;
+        width: 100vw;
+        height: 100vh;
+    }
+}
+
+#identifyModal {
     background-image: url("https://images.indianexpress.com/2025/01/chronic-illness.jpg");
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;  /* Ensures it covers the full area */
+    background-position: center; /* Centers the image */
+    width: 100vw;  /* Full viewport width */
+    height: 100vh; /* Full viewport height */
     position: fixed;
+    top: 0;
+    left: 0;
     cursor: pointer;
 }
+
+/* Media Query for Smaller Screens */
+@media (max-width: 720px) {
+    #identifyModal {
+        background-size: cover; /* Ensures it covers the full screen */
+        background-position: center;
+        width: 100vw;
+        height: 100vh;
+    }
+}
+
 .short{
     padding-top: 70px;
 }
+
+
 #identifyModal .modal-content{
     background-color: rgba(228, 230, 230, 0.833);
 }
