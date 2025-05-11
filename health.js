@@ -243,3 +243,20 @@ window.onclick = function (event) {
     }
 }
 
+
+// Appointment Modal functionality
+document.getElementById("appointmentCard").onclick = function () {
+    document.getElementById("appointmentModal").style.display = "block";
+};
+
+document.getElementById("closeAppointmentModal").onclick = function () {
+    document.getElementById("appointmentModal").style.display = "none";
+};
+
+// Optional: Close modal when clicking outside
+window.onclick = function (event) {
+    const modal = document.getElementById("appointmentModal");
+    if (event.target === modal) {
+        modal.style.display = "none";
+    }
+};

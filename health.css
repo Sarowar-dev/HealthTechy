@@ -661,7 +661,7 @@ input{
 }
 
 #doctorsModal {
-    background-image: url("https://hms.harvard.edu/sites/default/files/media/800-Doctors-Talking-GettyImages-1421919753.jpg");
+    background-image: url("https://plus.unsplash.com/premium_photo-1658506671316-0b293df7c72b?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8ZG9jdG9yfGVufDB8fDB8fHww");
     background-repeat: no-repeat;
     background-size: cover; /* Ensures the image fully covers the screen */
     background-position: center; /* Centers the image */
@@ -671,6 +671,7 @@ input{
     top: 0;
     left: 0;
 }
+
 
 /* Mobile-specific adjustments */
 @media (max-width: 720px) {
@@ -748,3 +749,19 @@ input{
     color: rgb(6, 6, 22);
     font-weight: bold;
 }
+
+
+#appointmentForm button {
+    width: 100%;         /* Set the button width to 80% */
+    background-color: green; /* Set button color to green */
+    color: white;       /* Set the text color to white */
+    padding: 10px;      /* Optional: Add padding for better appearance */
+    border: none;       /* Remove any border */
+    border-radius: 5px; /* Optional: Add rounded corners */
+    cursor: pointer;   /* Make cursor pointer on hover */
+}
+
+#appointmentForm button:hover {
+    background-color: darkgreen; /* Darken the button on hover */
+}
+
