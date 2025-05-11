@@ -765,3 +765,14 @@ input{
     background-color: darkgreen; /* Darken the button on hover */
 }
 
+
+@media (min-width: 768px) {
+    .card-container {
+      flex-direction: row; /* horizontal layout on tablets & desktops */
+      flex-wrap: wrap;     /* allow wrapping if needed */
+    }
+  
+    .card {
+      flex: 1 1 calc(33.33% - 20px); /* 3 cards per row with gap compensation */
+    }
+  }
