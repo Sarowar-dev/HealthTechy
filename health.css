@@ -227,8 +227,6 @@ header div{
     box-shadow: 0px 2px 4px;
     margin: 15px;
 }
-
-
 .below{
     margin-top: 30px;
     display: flex;
@@ -236,7 +234,6 @@ header div{
     flex-wrap: wrap;
 
 }
-
 .ill{
     height: 150px;
     width: 200px;
@@ -308,7 +305,6 @@ header div{
     padding: 8px;
     border-bottom: 1px solid #ddd;
 }
-
 .modal {
     display: none; /* Hidden by default */
     position: fixed;
@@ -322,15 +318,6 @@ header div{
     background-size: cover; /* Ensures full-screen coverage without distortion */
     background-position: center; /* Keeps the image centered */
 }
-
-/* Mobile-specific adjustments */
-@media (max-width: 768px) { /* Target smaller screens */
-    .modal {
-        background-size: cover; /* Ensures the image covers the entire screen */
-        background-position: center; /* Keeps the focus on the important part of the image */
-    }
-}
-
 .modal-content {
     background-color: rgba(64, 64, 64, 0.15);
     margin: 15% auto;
@@ -387,29 +374,6 @@ header div{
     margin: 25px;
     color:black;
 }
-
-
-@media (max-width: 600px)
-{
-    .image_text h2{
-        color: white;
-        font-size: 1rem;
-        margin-top: -30%;
-        }
-    .modal{
-        width: 100%;
-        height: 100%;
-        padding: 15px;
-        background-size: cover;
-        background-position:center;
-    }
-    .header div{
-        padding-left: 0%;
-        font-size: 14px;
-    }
-}
-
-
 div #signupForm{
     color: rgb(2, 12, 12);
     width: 500px;
@@ -447,8 +411,6 @@ input{
     right: 40%;
     cursor: pointer;
 }
-
-
 .signup-button:hover{
     background-color: skyblue;
     color: black;
@@ -609,17 +571,6 @@ input{
     top: 0;
     left: 0;
 }
-
-/* Mobile-specific adjustments */
-@media (max-width: 768px) { /* Adjust for mobile screens */
-    #shopsModal {
-        background-size: cover; /* Ensures the image covers the screen */
-        background-position: center; /* Keeps the image centered */
-        width: 100vw;
-        height: 100vh;
-    }
-}
-
 #ambulanceModal {
     background-image: url("https://medcab.in/assets/blogs/blog_thumbnail1690458201.jpg");
     background-repeat: no-repeat;
@@ -631,17 +582,6 @@ input{
     top: 0;
     left: 0;
 }
-
-/* Mobile-specific adjustments */
-@media (max-width: 768px) { /* Adjust for mobile screens */
-    #ambulanceModal {
-        background-size: cover; /* Ensures the image covers the screen */
-        background-position: center; /* Keeps the image centered */
-        width: 100vw;
-        height: 100vh;
-    }
-}
-
 #hospitalsModal {
     background-image: url("https://ehealth.eletsonline.com/wp-content/uploads/2009/07/best-hospital-in-south-india.jpg");
     background-repeat: no-repeat;
@@ -654,16 +594,6 @@ input{
     left: 0;
 }
 
-/* Mobile-specific adjustments */
-@media (max-width: 720px) {
-    #hospitalsModal {
-        background-size: cover; /* Ensures the image covers the screen properly */
-        background-position: center;
-        width: 100vw;
-        height: 100vh;
-    }
-}
-
 #doctorsModal {
     background-image: url("https://plus.unsplash.com/premium_photo-1658506671316-0b293df7c72b?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8ZG9jdG9yfGVufDB8fDB8fHww");
     background-repeat: no-repeat;
@@ -674,17 +604,6 @@ input{
     position: fixed;
     top: 0;
     left: 0;
-}
-
-
-/* Mobile-specific adjustments */
-@media (max-width: 720px) {
-    #doctorsModal {
-        background-size: cover; /* Ensures the image covers the screen properly */
-        background-position: center;
-        width: 100vw;
-        height: 100vh;
-    }
 }
 
 #identifyModal {
@@ -700,21 +619,9 @@ input{
     cursor: pointer;
 }
 
-/* Media Query for Smaller Screens */
-@media (max-width: 720px) {
-    #identifyModal {
-        background-size: cover; /* Ensures it covers the full screen */
-        background-position: center;
-        width: 100vw;
-        height: 100vh;
-    }
-}
-
 .short{
     padding-top: 70px;
 }
-
-
 #identifyModal .modal-content{
     background-color: rgba(228, 230, 230, 0.833);
 }
@@ -753,8 +660,6 @@ input{
     color: rgb(6, 6, 22);
     font-weight: bold;
 }
-
-
 #appointmentForm button {
     width: 100%;         /* Set the button width to 80% */
     background-color: green; /* Set button color to green */
@@ -768,18 +673,6 @@ input{
 #appointmentForm button:hover {
     background-color: darkgreen; /* Darken the button on hover */
 }
-
-
-@media (min-width: 768px) {
-    .card-container {
-      flex-direction: row; /* horizontal layout on tablets & desktops */
-      flex-wrap: wrap;     /* allow wrapping if needed */
-    }
-  
-    .card {
-      flex: 1 1 calc(33.33% - 20px); /* 3 cards per row with gap compensation */
-    }
-  }
 
   ul {
     list-style: none;
@@ -820,5 +713,53 @@ input{
   #hospitalBookingForm button:hover {
     background-color: #218838; /* darker green on hover */
   }
+
+  @media (max-width: 768px) {
+    .header .para {
+        font-size: 10px; /* smaller font for links/text */
+      }
+      .header div{
+        margin-left: -117px;
+      }
+      .para1{
+        margin-left: 1px;
+      }
+      
+      .header button.login, 
+      .header button.signup {
+        font-size: 10px; /* smaller button text */
+        padding: 6px 10px; /* optional: smaller padding */
+      }
+      .login{
+        margin-left: -30px;
+        padding-left: -20px;
+      }
+      .signup{
+        margin-left: -10px;
+      }
+    .container {
+      display: flex;
+      flex-direction: column;    /* stack vertically */
+      align-items: center;       /* center all children horizontally */
+    }
   
+    .card {
+      /* To make sure cards don't stretch full width and stay centered */
+      width: 80%;               /* or any width you want */
+      margin: 10px 0;           /* vertical spacing */
+    }
+  
+    .short .image_text { 
+        text-align: left;         /* left align text */
+        font-size: 9px; /* smaller font size for mobile */
+        line-height: 1.3;
+        margin-left: -10px;
+      }
+  }
+  
+  
+  
+  
+
+
   
