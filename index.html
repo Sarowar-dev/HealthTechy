@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>HealthTechy</title>
+    <link rel="icon" href="https://thumbs.dreamstime.com/b/medical-cross-heart-family-health-logo-icon-white-backgraound-ai-additional-vector-medical-cross-heart-family-health-logo-117449780.jpg" type="image/png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" 
     integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" 
     crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -35,59 +36,65 @@
                 <h2 class="doctorlist"><u>Doctors List</u>&nbsp;&nbsp;<i class="fa fa-user-md"></i></h2><br>
 
                 <!-- Specialty Lists -->
+                <!-- Orthopedic -->
                 <div class="orthopedic">
                     <h3>Orthopedic</h3>
                     <ul>
-                        <li>D. Sardar</li>
-                        <li>R. Mondal</li>
-                        <li>Lk. Mukherjee</li>
-                        <li>Vibhas Mondal</li>
-                        <li>Samim Khan</li>
+                    <li class="doctor-item" data-doctor="D. Sardar">D. Sardar</li>
+                    <li class="doctor-item" data-doctor="R. Mondal">R. Mondal</li>
+                    <li class="doctor-item" data-doctor="Lk. Mukherjee">Lk. Mukherjee</li>
+                    <li class="doctor-item" data-doctor="Vibhas Mondal">Vibhas Mondal</li>
+                    <li class="doctor-item" data-doctor="Samim Khan">Samim Khan</li>
                     </ul>
                 </div><br>
-
+                
+                <!-- Cardiology -->
                 <div class="cardiology">
                     <h3>Cardiology</h3>
                     <ul>
-                        <li>Naresh Trehan</li>
-                        <li>Ashok Seth</li>
-                        <li>S. K. Gupta</li>
-                        <li>K. K. Agarwal</li>
-                        <li>C. N. Makhija</li>
+                    <li class="doctor-item" data-doctor="Naresh Trehan">Naresh Trehan</li>
+                    <li class="doctor-item" data-doctor="Ashok Seth">Ashok Seth</li>
+                    <li class="doctor-item" data-doctor="S. K. Gupta">S. K. Gupta</li>
+                    <li class="doctor-item" data-doctor="K. K. Agarwal">K. K. Agarwal</li>
+                    <li class="doctor-item" data-doctor="C. N. Makhija">C. N. Makhija</li>
                     </ul>
                 </div><br>
-
+                
+                <!-- General Physician -->
                 <div class="general">
                     <h3>General Physician</h3>
                     <ul>
-                        <li>M. G. Alam</li>
-                        <li>Md Samsujjaman</li>
-                        <li>SK. Ghosh</li>
-                        <li>Sahid Imam Mallick</li>
-                        <li>Khairul Imam Mallick</li>
+                    <li class="doctor-item" data-doctor="M. G. Alam">M. G. Alam</li>
+                    <li class="doctor-item" data-doctor="Md Samsujjaman">Md Samsujjaman</li>
+                    <li class="doctor-item" data-doctor="SK. Ghosh">SK. Ghosh</li>
+                    <li class="doctor-item" data-doctor="Sahid Imam Mallick">Sahid Imam Mallick</li>
+                    <li class="doctor-item" data-doctor="Khairul Imam Mallick">Khairul Imam Mallick</li>
                     </ul>
                 </div><br>
-
+                
+                <!-- Child Specialist -->
                 <div class="child">
                     <h3>Child Specialist</h3>
                     <ul>
-                        <li>M.A. Habib</li>
-                        <li>Mustakim Laskar</li>
-                        <li>Halim Sk.</li>
-                        <li>Mariya Arjuman</li>
+                    <li class="doctor-item" data-doctor="M.A. Habib">M.A. Habib</li>
+                    <li class="doctor-item" data-doctor="Mustakim Laskar">Mustakim Laskar</li>
+                    <li class="doctor-item" data-doctor="Halim Sk.">Halim Sk.</li>
+                    <li class="doctor-item" data-doctor="Mariya Arjuman">Mariya Arjuman</li>
                     </ul>
                 </div><br>
-
+                
+                <!-- Dental -->
                 <div class="dental">
                     <h3>Dental</h3>
                     <ul>
-                        <li>Goutam Naskar</li>
-                        <li>Mosiur Rahaman Laskar</li>
-                        <li>Rakibul Molla</li>
-                        <li>Inzamul Haque</li>
-                        <li>Khairul Gazi</li>
+                    <li class="doctor-item" data-doctor="Goutam Naskar">Goutam Naskar</li>
+                    <li class="doctor-item" data-doctor="Mosiur Rahaman Laskar">Mosiur Rahaman Laskar</li>
+                    <li class="doctor-item" data-doctor="Rakibul Molla">Rakibul Molla</li>
+                    <li class="doctor-item" data-doctor="Inzamul Haque">Inzamul Haque</li>
+                    <li class="doctor-item" data-doctor="Khairul Gazi">Khairul Gazi</li>
                     </ul>
                 </div><br>
+  
 
                 <!-- Hospital List -->
                 <div class="hospital"> 
@@ -202,13 +209,13 @@
                     <h2>Book Appointment</h2>
                     <form id="appointmentForm">
                         <label for="patientName">Name:</label>
-                        <input type="text" id="patientName" name="name" required><br><br>
+                        <input type="text" id="patientName" name="name" placeholder="Enter your name" required><br><br>
             
                         <label for="patientMobile">Mobile:</label>
-                        <input type="tel" id="patientMobile" name="mobile" required><br><br>
+                        <input type="tel" id="patientMobile" name="mobile" placeholder="123456789" required><br><br>
             
                         <label for="patientEmail">Email:</label>
-                        <input type="email" id="patientEmail" name="email" required><br><br>
+                        <input type="email" id="patientEmail" name="email" placeholder="abc@gmail.com" required><br><br>
             
                         <label for="appointmentDate">Date:</label>
                         <input type="date" id="appointmentDate" name="date" required><br><br>
@@ -219,7 +226,7 @@
                         <label for="appointmentReason">Reason:</label>
                         <textarea id="appointmentReason" name="reason" placeholder="Describe symptoms or reason" required></textarea><br><br>
             
-                        <button type="submit">Submit</button>
+                        <button type="submit" class="Appointsubmit">Submit</button>
                     </form>
                 </div>
             </div>
@@ -233,25 +240,56 @@
                     <div class="doctor2"><b class="doctor2">Doctors</b></div>
                 </div>
                 
-                <!-- Modal Structure -->
-                <div id="doctorsModal" class="modal">
+                <!-- Doctors Modal -->
+                <div id="doctorsModal" class="modal" style="display:none;">
                     <div class="modal-content">
-                        <span class="close">&times;</span>
-                        <h2>Our Doctors</h2>
-                        <p><b>Select a specialty to view available doctors.</b></p>
-                        <select id="specialty">
-                            <option value="orthopedic">Orthopedic</option>
-                            <option value="cardiology">Cardiology</option>
-                            <option value="general">General Physician</option>
-                            <option value="child">Child Specialist</option>
-                            <option value="dental">Dental</option>
-                        </select>
-                        <button onclick="showDoctors()">View Doctors</button>
-                        <div id="doctorList"></div>
+                    <span class="close" id="closeDoctorsModal">&times;</span>
+                    <h2>Our Doctors</h2>
+                    <p><b>Select a specialty to view available doctors.</b></p>
+                    <select id="specialty">
+                        <option value="orthopedic">Orthopedic</option>
+                        <option value="cardiology">Cardiology</option>
+                        <option value="general">General Physician</option>
+                        <option value="child">Child Specialist</option>
+                        <option value="dental">Dental</option>
+                    </select>
+                    <button onclick="showDoctors()">View Doctors</button>
+                    <div id="doctorList"></div>
                     </div>
                 </div>
-
-
+                
+                <!-- Appointment Modal -->
+                <div id="appointmentModal" class="modal" style="display:none;">
+                    <div class="modal-content">
+                    <span class="close" id="closeAppointment">&times;</span>
+                    <h2>Book Appointment</h2>
+                    <form id="appointmentForm">
+                        <label for="doctorName">Doctor:</label>
+                        <input type="text" id="doctorName" name="doctor" readonly />
+                
+                        <label for="patientName">Your Name:</label>
+                        <input type="text" id="patientName" name="patientName" required />
+                
+                        <label for="patientMobile">Mobile:</label>
+                        <input type="tel" id="patientMobile" name="patientMobile" required />
+                
+                        <label for="patientEmail">Email:</label>
+                        <input type="email" id="patientEmail" name="patientEmail" required />
+                
+                        <label for="appointmentDate">Date:</label>
+                        <input type="date" id="appointmentDate" name="appointmentDate" required />
+                
+                        <label for="appointmentTime">Time:</label>
+                        <input type="time" id="appointmentTime" name="appointmentTime" required />
+                
+                        <label for="reason">Reason for Appointment:</label>
+                        <textarea id="reason" name="reason" rows="3" required></textarea>
+                
+                        <button type="submit">Submit</button>
+                    </form>
+                    </div>
+                </div>
+  
                 <div class="nursing">
                     <!-- Corrected image URL on a single line -->
                     <img class="nursing1" src="https://media.istockphoto.com/id/1419877131/photo/building-facade-of-a-hospital-in-commercial-and-business-district-under-blue-sky.jpg?s=612x612&w=0&k=20&c=wGxVbFSxljSZb_t_qROE4RwsCgssKbGlqawAtmQ88Ls=" alt="hospital">
@@ -259,15 +297,44 @@
                     <div class="nursing2"><b class="nursing2">Hospitals</b></div>
                 </div>
                 
-                <!-- Modal Structure -->
-                <div id="hospitalsModal" class="modal">
+                <div id="hospitalsModal" class="modal" style="display: none;">
                     <div class="modal-content">
-                        <span class="close">&times;</span>
+                        <span class="close" id="closeHospitalModal">&times;</span>
                         <h2>Hospitals List</h2>
-                        <ul id="hospitalList"></ul>
+                        <ul id="hospitalList">
+                            <li>Amri Hospital</li>
+                            <li>Desun Hospital</li>
+                            <li>Apollo Multispeciality Hospital</li>
+                            <li>Woodlands Multispeciality Hospital</li>
+                            <li>Manipal Hospitals Broadway</li>
+                            
+                        </ul>
                     </div>
                 </div>
 
+                <!-- Hospital Booking Modal -->
+                <div id="hospitalBookingModal" class="modal">
+                    <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Book Appointment at <span id="bookingHospitalName"></span></h2><br>
+                    <form id="hospitalBookingForm">
+                        <label>
+                        Name:
+                        <input type="text" name="patientName" placeholder="Enter your name" required />
+                        </label><br><br>
+                        <label>
+                        Phone:
+                        <input type="tel" name="contact" placeholder="Mobile" required />
+                        </label><br><br>
+                        <label>
+                        Appointment Date:
+                        <input type="date" name="appointmentDate" required />
+                        </label><br><br>
+                        <button type="submit">Book Appointment</button>
+                    </form>
+                    </div>
+                </div>
+  
                 <!-- Shops Section -->
                 <div class="shop">
                     <!-- Medicine Shop Image -->
